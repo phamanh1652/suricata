@@ -1,0 +1,8 @@
+CREATE TABLE report ( sid   INT   UNSIGNED NOT NULL,
+                      cid   INT   UNSIGNED NOT NULL,
+                      ip_proto  TINYINT   UNSIGNED NOT NULL,
+                      ip_src    INT       UNSIGNED NOT NULL,
+                      ip_dst    INT       UNSIGNED NOT NULL,
+                      timestamp INT       DATETIME NOT NULL,
+                      PRIMARY KEY (sid,cid)
+);
